@@ -4,7 +4,7 @@ import random
 from urllib import urlopen
 import sys
 
-WORD_URL = "hrrp://learncodethehardway.org/words.txt"
+WORD_URL = "http://learncodethehardway.org/words.txt"
 WORDS = []
 
 PHRASES = {
@@ -58,7 +58,7 @@ def convert(snippet, phrase):
         for word in param_names:
             result = result.replace("@@@", word, 1)
 
-        results.append(resul)
+        results.append(result)
 
     return results
 
